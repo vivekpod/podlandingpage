@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="container">
+    
+        <h1> Here is the list! </h1>
+        <table class="table">
+            
+            <tr>
+                <th>Id </th>
+                <th>Email</th>
+                <th>State</th>
+                <th>City</th>
+                <th>PhoneNumber </th>
+            </tr>
+        {% for item in interestlist %}
+            <tr>
+                <td>{{item['id']}} </td>
+                <td>{{item['email']}} </td>
+                <td>{{item['state']}} </td>
+                <td>{{item['city']}} </td>
+                <td>{{item['phonenumber']}} </td>
+            </tr> 
+           
+        {% endfor %}
+        </table>
+
+
+      
+    
+</div>
+
+{% endblock %}

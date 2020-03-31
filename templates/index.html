@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+  <title>IITM POD</title>
+</head>
+
+<body>
+  <!-- START HERE KARUMARI MATA -->
+  <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top" id="main-nav">
+    <div class="container">
+          <a href="#" class="navbar-brand"><img src="{{ url_for('static', filename='img/iitmlogo.png') }}" height="50" width="50"> IITM POD </a>
+           <button class="navbar-toggler" data-toggle="collapse" data-target ="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+           <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a href="#highlights" class="nav-link">HIGHLIGHTS</a>
+              </li>
+             
+             <li class="nav-item">
+               <a href="#home-heading" class="nav-link">PROGRAM STRUCTURE</a> 
+             </li>
+             <li class="nav-item">
+              <a href="#main-header" class="nav-link">ELIGIBILITY</a>
+            </li>
+             <li class="nav-item">
+               <a href="#courseformat" class="nav-link">SCHEDULE</a>
+             </li>
+             <li class="nav-item">
+               <a href="#FAQ" class="nav-link">FAQ</a>
+             </li>
+            </ul>
+          </div>
+
+    </div>
+  </nav>
+
+  <!-- SHOW CASE SLIDER -->
+
+  <section id="showcase">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item carousel-image-2 active">
+          <div class="container">
+            <div class="carousel-caption  d-sm-block text-right mb-5">
+                <h1 class="display-3">IIT MADRAS</h1>
+                <h3>Programme for Online Degrees</h3>
+                <p class="lead"> IIT Madras has carefully curated a set of 
+                  courses and programmes 
+                  for those who wish to learn and master Data Science and Programming..</p>
+                  <a href="#courseformat" class="btn btn-warning btn-lg">Sign up Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item carousel-image-2">
+          <div class="container">
+            <div class="carousel-caption  d-sm-block  mb-5">
+                <h1 class="display-3">Programming and Data Science(P&DS)</h1>
+                <p class="lead"> The online mode of these courses allows for learners of all ages 
+                  and from across the country to take up the programmes without disrupting their regular routine.</p>
+                  <a href="#courseformat" class="btn btn-warning btn-lg">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item carousel-image-3">
+          <div class="container">
+            <div class="carousel-caption  d-sm-block text-right mb-5">
+                <h1 class="display-3">An Opportunity to Unleash</h1>
+                <p class="lead">Prepare yourself for the Future!</p>
+                  <a href="#courseformat" class="btn btn-light btn-lg">Learn More </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#myCarousel"  data-slide="prev" class="carousel-control-prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a href="#myCarousel"  data-slide="next" class="carousel-control-next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+
+  </section>
+  <!-- HIGHLIGHTS ICON SECTION -->
+
+  <section id="highlights" class="py-5">
+    <div class="container">
+     
+      <div class="row">
+        <div class="col-md-4 mb-4 text-center">
+          <!-- <i class="fas fa-cog fa-3x mb-2"></i> -->
+          <img src="{{ url_for('static', filename='img/worldclassfaculty.png') }}" width="50" height="50" alt="">
+          <h3>World Class Faculty</h3>
+          <p>Learn from some of the distinguished IIT & CMI faculty members in the areas of statistical inferences, mathematical modeling & machine learning exponents.
+          </p>
+        </div>
+        <div class="col-md-4 mb-4 text-center">
+          <img src="{{ url_for('static', filename='img/curatedcontent.png') }}" width="50" height="50" alt="">
+          <h3>Curated Content</h3>
+          <p>Specifically designed, continuously adaptive content focused on maximising learner engagement and increased understanding of core curriculum concepts.</p>
+        </div>
+        <div class="col-md-4 mb-4 text-center">
+          <img src="{{ url_for('static', filename='img/ courseoptions.png') }}" width="50" height="50" alt="">
+          <h3>Course Options</h3>
+          <p>Majors designed to offer the biggest career opportunities in the next decade - Artificial Intelligence / Machine Learning, Application Theory and / or Computer Systems.</p>
+        </div>
+      </div>
+      <div class="row">
+    
+        <div class="col-md-4 mb-4 text-center">
+          <img src="{{ url_for('static', filename='img/flexibility.png') }}" width="50" height="50" alt="">
+          <h3>Flexible</h3>
+          <p>MStructured program enabling multiple entry exit points for learners of varied background, aspirations, schedules with an ability to learn at their own pace.</p>
+        </div>
+        <div class="col-md-4 mb-4 text-center">
+          <img src="{{ url_for('static', filename='img/assignments.png') }}" width="50" height="50" alt="">
+          <h3>Assignments</h3>
+          <p>Equipped with deep tech analytical tools and data driven intervention paths, learners are provided with learning assist content and academic support guidance.</p>
+        </div>
+        <div class="col-md-4 mb-4 text-center">
+          <img src="{{ url_for('static', filename='img/mentorship.png') }}" width="50" height="50" alt="">
+          <h3>Mentors</h3>
+          <p>Equipped with deep tech analytical tools and data driven intervention paths, learners are provided with learning assist content and academic support guidance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- HOME HEADING SECTION -->
+    <section id="home-heading" class="p-5">
+      <div class="dark-overlay">
+        <div class="row">
+          <div class="col">
+            <div class="container pt-5">
+              <h1 class="display-6">Program Structure</h1>
+              <p class="display-5 d-md-block">Are You Ready To Get Started?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- INFO SECTION 
+  <section id="info" class="py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 align-self-center">
+          <h3>Lorem Ipsum</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eveniet blanditiis incidunt iusto corrupti illum
+            cum laudantium ex sequi amet.</p>
+          <a href="about.html" class="btn btn-outline-danger btn-lg">Learn More</a>
+        </div>
+        <div class="col-md-6">
+          <img src="img/laptop.png" alt="" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- PROGRAM STRUCTURE -->
+
+  <div class="container">
+    <header id="main-header">
+      
+       
+       
+       
+        <div>
+              <div class="d-flex flex-row  justify-content-between text-white align-items-stretch text-center">
+                <div class="port-item p-4 bg-secondary" data-toggle="collapse" data-target="#home">
+                 <!-- <i class="fas fa-home fa-2x d-block"></i>--> 
+                  <span class="d-none d-sm-block text-center">Eligibility Criteria</span>
+                </div>
+                <div class="port-item p-4 bg-info" data-toggle="collapse" data-target="#resume">
+                
+                  <span class="d-none d-sm-block">Qualifying Process</span>
+                </div>
+                <div class="port-item p-4 bg-danger" data-toggle="collapse" data-target="#work">
+         
+                  <span class="d-none d-sm-block">Foundational Programme</span>
+                </div>
+                <div class="port-item p-4 bg-dark" data-toggle="collapse" data-target="#contact">
+                 
+                  <span class="d-none d-sm-block">Diploma Programme</span>
+                </div>
+                <div class="port-item p-4 bg-success" data-toggle="collapse" data-target="#extra">
+         
+                  <span class="d-none d-sm-block">Degree Programme</span>
+                </div>
+              </div>
+            
+          
+        
+      </div>
+  </header>
+    </div>
+   <!-- PROGRAM STRUCTURE CONTINUED  -->
+   <div class="container">
+    <div id="home" class="collapse show">
+      <div class="card card-body bg-light  py-5">
+        <h2>Eligibility</h2>
+        <p>10+2 (Any Board, Any Group, Any Age) + Based in India (to be able to take exams) + Should have been admitted to college or should have graduated.
+           Those who are eligible may REGISTER for the Qualifying Process.</p>
+      </div>
+    </div>
+   
+    <div id="resume" class="collapse">
+      <div class="card card-body bg-light  py-5">
+        <h2>Qualifying Process</h2>
+        <p>4 COURSES | 4 WEEKS of content and assignments for each course.
+          QUALIFYING EXAM at the end of 4 weeks. 
+          Those who clear the QUALIFYING EXAM will be eligible for the FOUNDATIONAL PROGRAMME.</p>
+      </div>
+   </div>
+   <div id="work" class="collapse">
+    <div class="card card-body bg-light  py-5">
+      <h2>Foundational Programme</h2>
+      <p>Eligibility: Successfully clearing QUALIFYING EXAM .8 COURSES | Minimum 2 terms (or 8 months) 
+        Complete all 8 courses to become FOUNDATION CERTIFIED from Centre for Continuing Education, IIT Madras.</p>
+    </div>
+    </div>
+    <div id="contact" class="collapse">
+      <div class="card card-body bg-light  py-5">
+        <h2>Diploma Programme</h2>
+        <p>Eligibility: FOUNDATION CERTIFIED or LATERAL ENTRY
+          12 COURSES | Minimum 3 terms (or 12 months) Complete all 12 courses to get DIPLOMA IN PROGRAMMING & DATA SCIENCE from Indian Institute of Technology Madras (IITM). 
+          Option to get DIPLOMA IN PROGRAMMING or DIPLOMA IN DATA SCIENCE upon completing 6 courses.</p>
+      </div>
+      </div>
+      <div id="extra" class="collapse">
+        <div class="card card-body bg-light  py-5">
+          <h2>Degree Programme</h2>
+          <p>Eligibility: DIPLOMA IN PROGRAMMING & DATA SCIENCE
+            Minimum 11 COURSES | Minimum 3 terms (or 12 months)
+            Three specialisations to pick from: COMPUTER SYSTEMS COMPUTER APPLICATIONS
+            ARTIFICIAL INTELLIGENCE & MACHINE LEARNING
+            Complete all 11 courses to get BSC IN PROGRAMMING & DATA SCIENCEfrom Indian Institute of Technology Madras, 
+            and become an IIT MADRAS ALUMNUS</p>
+        </div>
+        </div>
+   </div>
+   
+   <!-- COURSE FORMAT -->
+
+   <section id="courseformat " class="py-3 bg-dark text-light">
+    <div class="container">
+      <div class="row">
+        
+          <h3 class="text-sm-center"> Course Format</h3>
+          <p>Enrollment: There are 3 terms per year and a student can enroll for a minimum 2 courses and a maximum of 6 courses per term assuming they meet the prerequisites of each course they wish to enroll in.
+             A student may choose to skip a term upon paying a nominal fee to keep the registration afloat.</p>
+            <p>Course Content: Each course content runs for a total of 12 weeks with about 2.5 hours of video content released every Monday. Assignments and reading material for each course vary from week to week.
+            </p>
+            <p>Assessments: There will be 3 proctored quizzes at the end of 5th, 8th, 11th week and one final exam, along with a number of assignments during the term. 
+              For the calculations of the quiz score, best 2 out of 3 will be taken. The learner will have to score a minimum of 50% overall and at least 40% in the final exam to clear the course.</p>
+        
+        
+      </div>
+    </div>
+    </section>
+    <!-- INTEREST LIST --> 
+  <section id="info" class="py-3" id="info">
+    <div class="container">
+      <div class="row">
+        
+        <div class="col-md-6">
+        <h4>Interested?</h4>
+        <p class="text-secondary">Drop us your email address so we can notify once registrations open on 1st June 2020 </p>
+          <form class="form-group" method="POST">
+
+        {{form.hidden_tag() }}
+        <div class="form-group">
+            {{form.email.label}}
+            {{form.email(class="form-control")}}
+        </div>
+        
+        <div class="form-group">
+            {{form.state.label}} {{form.state(class="form-control")}}
+        </div>
+        
+        <div class="form-group">
+            {{form.city.label}} {{form.city(class="form-control")}}
+        </div>
+        
+        
+        <div class="form-group">
+            {{form.phonenumber.label}}{{form.phonenumber(class="form-control")}}
+        </div>
+               
+            {{ form.submit(class="btn btn-secondary btn-lg") }}
+           <!-- 
+             <input class="form-control" type="email" placeholder="Email"><br>
+            
+            <input class="form-control" type="text" placeholder="State"><br>
+
+            <input class="form-control" type="text" placeholder="City"><br>
+
+            <input class="form-control" type="number" placeholder="Phone number"><br>
+
+            <input  type="submit" value="SUBMIT" class="btn btn-secondary btn-lg">
+           --> 
+
+          </form>
+        </div>
+        <div class="col-md-6 align-self-center">
+          <h6>Prerequisites/Eligibility</h6>
+          <p>Should be based in India to take the proctored exams. Studied Mathematics and English until 10th standard or Equivalent. Passed XII (or Equivalent) or 3 year Diploma Program.
+            Graduated (Degree or Diploma), or pursuing an undergraduate degree programme or Dropped off a degree programme.</p>
+            <h6>Qualifying Process</h6>
+          <p>All registered candidates, meeting eligibility criteria, will have access to the first 4 weeks of content. Program enrollment will be based on their performance in the qualification quiz, which will be a proctored exam, conducted at the end of it.</p>
+            <h6>Tentative Schedule</h6>
+          <p>Registrations for Qualifier Exam: 1st June - 30th June<br>
+            Qualifier Courses: 1st June - 31st July<br>
+            Qualifier Exam: 9th August / 10th August / 16th August / 17th August<br>
+            Qualifier Exam Results: 31st August<br>
+            FOR THOSE WHO ARE SELECTED FROM THE QUALIFIER EXAM: Enrolment for 1st Semester: 1st September - 13th September<br>
+             1st Semester Begins: 14th September</p>
+        
+        </div>
+       
+      </div>
+    </div>
+  </section> 
+
+  <section id="FAQ" class="py-5 text-center bg-light">
+    <h3>Frequently Asked Questions</h3>
+    <div id="accordion">
+      <div class="card">
+        <div class="card-header">
+          <h5 class="mb-0"></h5>
+              <div href="#collapse1" data-toggle="collapse" data-parent="#accordion">
+                <i class="fas fa-arrow-circle-down"></i> What is the qualification criteria?
+              </div>
+          </h5>
+        </div>
+        <div id="collapse1" class="collapse show">
+          <div class="card-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, 
+            praesentium. Quae ut earum doloremque, possimus veniam iusto exercitationem fugit velit.
+          </div>
+        </div>
+        <div class="card-header">
+          <h5 class="mb-0"></h5>
+              <div href="#collapse2" data-toggle="collapse" data-parent="#accordion">
+                <i class="fas fa-arrow-circle-down"></i>Will I need to know the basics of Data Science to take this course?
+
+              </div>
+          </h5>
+        </div>
+          <div id="collapse2" class="collapse">
+            <div class="card-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, 
+              praesentium. Quae ut earum doloremque, possimus veniam iusto exercitationem fugit velit.
+            </div>
+          </div>
+          <div class="card-header">
+            <h5 class="mb-0"></h5>
+                <div href="#collapse3" data-toggle="collapse" data-parent="#accordion">
+                  <i class="fas fa-arrow-circle-down"></i>Is there a possibility to pause the course and continue later?
+  
+                </div>
+            </h5>
+          </div>
+            <div id="collapse3" class="collapse">
+              <div class="card-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, 
+                praesentium. Quae ut earum doloremque, possimus veniam iusto exercitationem fugit velit.
+              </div>
+            </div>
+            <div class="card-header">
+              <h5 class="mb-0"></h5>
+                  <div href="#collapse4" data-toggle="collapse" data-parent="#accordion">
+                    <i class="fas fa-arrow-circle-down"></i>Do you provide any scholarships?
+                  </div>
+              </h5>
+            </div>
+              <div id="collapse4" class="collapse">
+                <div class="card-body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, 
+                  praesentium. Quae ut earum doloremque, possimus veniam iusto exercitationem fugit velit.
+                </div>
+              </div>
+        </div>
+       
+      </div>
+    </div>
+
+  </section>  
+
+    <!-- FOOTER -->
+    <footer id="main-footer" class="text-center p-4 bg-dark">
+      <div class="container">
+        <div class="row text-white">
+          <div class="col">
+            <p>Copyright &copy;
+              <span id="year"></span> IITM POD </p>
+          </div>
+          <div class="col text-white">
+            Contact us for any queries: support@pod.iitm.ac.in | +919000920002
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+ 
+
+
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+
+  <script>
+    // Get the current year for the copyright
+    $('#year').text(new Date().getFullYear());
+
+    //Configure Slider
+    $('.carousel').carousel({
+      interval:3000,
+      pause:'hover'
+
+    });
+
+
+    // Init Scrollspy
+    $('body').scrollspy({ target: '#main-nav' });
+
+    // Smooth Scrolling
+    $("#main-nav a").on('click', function (event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+
+        const hash = this.hash;
+
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function () {
+
+          window.location.hash = hash;
+        });
+      }
+    });
+  </script>
+</body>
+
+    
+
+</html>
